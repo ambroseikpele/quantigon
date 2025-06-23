@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantigon – AI Trading Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="logo.png" />
+    <style>
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Quantigon Logo" class="w-10 h-10" />
+        <span class="text-xl font-bold tracking-tight text-white">Quantigon</span>
+      </div>
+      <div class="flex gap-4">
+        <a href="#get-started" class="text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-xl">Get Started</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative text-center py-24 px-6 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 overflow-hidden">
+      <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1611974789855-9c4f0a6b3a28?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center"></div>
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <h1 class="text-5xl font-extrabold mb-6 leading-tight text-white">Your Trading Edge — Powered by AI</h1>
+        <p class="text-xl text-gray-300 mb-6">
+          Design, test, and launch strategies in minutes. No coding. Just conversation.
+        </p>
+        <a href="#get-started" class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition">
+          Try Quantigon →
+        </a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div class="glass p-6 rounded-2xl shadow">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/line-chart.png" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-red-400">Instant Backtesting</h3>
+        <p class="text-gray-300">Simulate trading strategies on historical data and optimize rapidly.</p>
+      </div>
+      <div class="glass p-6 rounded-2xl shadow">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-green-400">AI Strategy Builder</h3>
+        <p class="text-gray-300">Turn your trading ideas into working systems through conversation.</p>
+      </div>
+      <div class="glass p-6 rounded-2xl shadow">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/bot.png" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-red-400">Real-Time Signal Delivery</h3>
+        <p class="text-gray-300">Get actionable trade signals sent directly to your broker.</p>
+      </div>
+    </section>
+
+    <!-- Conversational Flow -->
+    <section class="py-24 px-6 bg-gray-800">
+      <h2 class="text-3xl font-bold mb-10 text-center text-white">Conversational Workflow</h2>
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="flex items-start gap-4 glass p-4 rounded-lg">
+          <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c4.97 0 9 3.582 9 8 0 2.253-1.147 4.296-3 5.735V21l-4.5-2.5L9 21v-4.265C7.147 15.296 6 13.253 6 11c0-4.418 4.03-8 9-8z"/></svg>
+          <p><strong>You:</strong> "I want a breakout strategy for EURUSD."</p>
+        </div>
+        <div class="flex items-start gap-4 glass p-4 rounded-lg">
+          <svg class="w-8 h-8 text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0110 10v5l-2 2h-1v-7h-2v7h-2v-7h-2v7h-2v-7H9v7H7v-7H5v7H4l-2-2v-5A10 10 0 0112 2z"/></svg>
+          <p><strong>Quantigon:</strong> "Creating a breakout system on H1 timeframe. Would you like stop-loss suggestions?"</p>
+        </div>
+        <div class="flex items-start gap-4 glass p-4 rounded-lg">
+          <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c4.97 0 9 3.582 9 8 0 2.253-1.147 4.296-3 5.735V21l-4.5-2.5L9 21v-4.265C7.147 15.296 6 13.253 6 11c0-4.418 4.03-8 9-8z"/></svg>
+          <p><strong>You:</strong> "Yes, add ATR-based stops."</p>
+        </div>
+        <div class="flex items-start gap-4 glass p-4 rounded-lg">
+          <svg class="w-8 h-8 text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0110 10v5l-2 2h-1v-7h-2v7h-2v-7h-2v7h-2v-7H9v7H7v-7H5v7H4l-2-2v-5A10 10 0 0112 2z"/></svg>
+          <p><strong>Quantigon:</strong> "Done. Ready to backtest or deploy?"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="get-started" class="py-24 px-6 bg-gradient-to-r from-green-700 via-red-700 to-green-800 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-white">Start Automating Your Trades</h2>
+      <p class="text-lg mb-6 text-white/90">Conversational AI designed for retail traders. No code. No hassle.</p>
+      <a href="#" class="inline-block bg-white text-green-700 px-6 py-3 text-lg rounded-xl shadow hover:bg-gray-100 transition">
+        Get Started with Quantigon
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-400 text-sm space-y-4">
+      <div class="flex justify-center gap-6">
+        <a href="https://x.com/Quantigon" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx.png" alt="X logo" />
+        </a>
+        <a href="https://www.linkedin.com/company/quantigon/" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn logo" />
+        </a>
+      </div>
+      <div>© <span id="year"></span> Quantigon. All rights reserved.</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
